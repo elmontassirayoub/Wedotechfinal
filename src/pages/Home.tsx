@@ -25,7 +25,7 @@ const Home = () => {
           <ServicesSwiper />
         </div>
 
-        <TeamSection />
+        {/* <TeamSection /> */}
         <SwiperSponsors />
         <BusinessHero />
         <Footer />
