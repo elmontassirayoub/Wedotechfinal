@@ -104,7 +104,7 @@ const Service = () => {
           <Card className="w-[359px] h-[154px] bg-[#232323] rounded-[17px] shadow-[0px_4px_4px_#c9b8b840,0px_4px_4px_#00000040] relative overflow-hidden">
             <CardContent className="p-7">
               <h2 className="[font-family:'Unbounded',Helvetica] font-normal text-white text-[41px] tracking-[-0.41px] leading-[30px]">
-                1.2M+
+                3.2M+
               </h2>
               <p className="mt-5 [font-family:'League_Spartan',Helvetica] font-normal text-white text-base tracking-[0] leading-5">
                 Users have interacted with websites <br />
@@ -121,7 +121,7 @@ const Service = () => {
           <Card className="w-[359px] h-[150px] bg-white rounded-[25px] shadow-[0px_4px_4px_#c9b8b840,0px_4px_4px_#00000040]">
             <CardContent className="p-6">
               <h2 className="[font-family:'Unbounded',Helvetica] font-normal text-black text-[41px] tracking-[-0.41px] leading-[30px]">
-                $3M
+                200K MAD 
               </h2>
               <p className="mt-5 [font-family:'League_Spartan',Helvetica] font-normal text-[#232323] text-base tracking-[0] leading-5">
                 in funding raised by businisess we&apos;ve <br />
@@ -145,14 +145,14 @@ const Service = () => {
               </div>
             </div>
             <div className="absolute w-[89px] h-[42px] top-[238px] left-[31px] flex gap-1">
-              <Avatar className="w-[42px] h-[42px]">
+              {/* <Avatar className="w-[42px] h-[42px]">
                 <AvatarImage src={Aymane} alt="User avatar" />
                 <AvatarFallback>U1</AvatarFallback>
               </Avatar>
               <Avatar className="z-40 w-[42px] h-[42px] -ml-5">
                 <AvatarImage src={Ayoub} alt="User avatar" />
                 <AvatarFallback>U2</AvatarFallback>
-              </Avatar>
+              </Avatar> */}
               <Badge className="z-50 w-[42px] h-[42px] rounded-full bg-[#7e84ff] -ml-5 flex items-center justify-center">
                 <span className="[font-family:'Unbounded',Helvetica] font-extrabold text-white text-[11px]">
                   +45
