@@ -145,19 +145,14 @@ const Service = () => {
               </div>
             </div>
             <div className="absolute w-[89px] h-[42px] top-[238px] left-[31px] flex gap-1">
-<<<<<<< HEAD
               <Avatar className="w-[42px] h-[42px]">
                 <AvatarImage src={Ayoub} alt="User avatar" />
-=======
-              {/* <Avatar className="w-[42px] h-[42px]">
-                <AvatarImage src={Aymane} alt="User avatar" />
->>>>>>> cd3d245ab434fdea928dc2772ee114105827281c
                 <AvatarFallback>U1</AvatarFallback>
               </Avatar>
               <Avatar className="z-40 w-[42px] h-[42px] -ml-5">
                 <AvatarImage src={Ayoub} alt="User avatar" />
                 <AvatarFallback>U2</AvatarFallback>
-              </Avatar> */}
+              </Avatar>
               <Badge className="z-50 w-[42px] h-[42px] rounded-full bg-[#7e84ff] -ml-5 flex items-center justify-center">
                 <span className="[font-family:'Unbounded',Helvetica] font-extrabold text-white text-[11px]">
                   +45
