@@ -1,12 +1,36 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Switch } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, CheckCircleIcon } from '@heroicons/react/20/solid'
 
 export default function ContactForm() {
   const [agreed, setAgreed] = useState(false)
+  const [showSuccess, setShowSuccess] = useState(false)
+
+  useEffect(() => {
+    if (!showSuccess) return
+    const timer = setTimeout(() => setShowSuccess(false), 5000)
+    return () => clearTimeout(timer)
+  }, [showSuccess])
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setShowSuccess(true)
+  }
 
   return (
-    <div className="px-6 py-24 sm:py-32 lg:px-8 mx-auto max-w-5xl">
+    <div className="px-6 py-24 sm:py-32 lg:px-8 mx-auto max-w-5xl relative">
+      {showSuccess && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/30" onClick={() => setShowSuccess(false)}>
+          <div className="bg-green-600 text-white rounded-2xl shadow-xl max-w-md w-full p-6 flex items-center gap-4" onClick={(e) => e.stopPropagation()}>
+            <CheckCircleIcon className="h-12 w-12 flex-shrink-0 text-green-200" />
+            <div>
+              <p className="font-semibold text-lg">Message sent successfully</p>
+              <p className="text-green-100 text-sm mt-1">Thank you! We have received your form and message and will get back to you as soon as possible.</p>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="max-w-2xl">
         <h2 className="text-5xl font-bold tracking-tight text-gray-900 text-center lg:text-left">
           Contact Us
@@ -16,7 +40,7 @@ export default function ContactForm() {
         </p>
       </div>
 
-      <form action="#" method="POST" className="mt-16 max-w-4xl mx-auto">
+      <form action="#" method="POST" className="mt-16 max-w-4xl mx-auto" onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <input
             id="first-name"
