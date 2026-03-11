@@ -4,7 +4,7 @@ import { Button } from "../../components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Badge } from "../ui/badge";
 // import Nour from "../../assets/team/Zeus.svg";
-import Ayoub from "../../assets/team/Ayoub.svg";
+import Ayoub from "../../assets/team/ayoub.svg";
 import polygone from '../../assets/services/Polygon.svg';
 import NoirBlanc from "../../assets/services/NoirBlanc.svg";
 import doubleQuotes from '../../assets/services/doubleQuotes.svg'
