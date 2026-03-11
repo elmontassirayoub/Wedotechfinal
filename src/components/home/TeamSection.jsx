@@ -1,13 +1,13 @@
 import React from 'react';
-import ayoub from "../../assets/team/ayoub.svg";
+import ayoub from "../../assets/team/Ayoub.svg";
 // import amari from "../../assets/team/essa.svg";
-
 // import hamid from "../../assets/team/hamid.svg";
-import simo from "../../assets/team/simo.svg";
+import simo from "../../assets/team/Simo.svg";
+import nour from "../../assets/team/Zeus.svg";
 // import omar from "../../assets/team/omar.svg";
 // import amine from "../../assets/team/amine.svg";
 // import smallLogo from "../../assets/team/smallLogo.png";
-// import user from "../../assets/team/user.png";
+import user from "../../assets/team/user.svg";
 
 const teamMembers = [
   {
@@ -16,26 +16,26 @@ const teamMembers = [
     image: ayoub,
   },
   {
-    name: "SimohMohamed Elkhalfi",
-    role: "Co-Founder",
+    name: "Mohamed Elkhalfi",
+    role: "Co-Founder, Mobile apps Developer",
     image: simo,  
    },
-  // {
-  //   name: "Redoine Elmfadel",
-  //   role: "Marketing Specialist",
-  //   image: user,
-  // },
-  // {
-  //   name: "Mohammed El khalfi",
-  //   role: "UI UX | Mobile apps & web Developer",
-  //   image: simo,
-  //   smalllogo: smallLogo,
-  // },
-  // {
-  //   name: "Amine Hajouji",
-  //   role: "Graphic designer",
-  //   image: user,
-  // },
+  {
+    name: "Redoine Elmfadel",
+    role: "Marketing Specialist",
+    image: user,
+  },
+  {
+    name: "Mohamed Nour",
+    role: "UI UX Designer , Art creator",
+    image: nour,
+    
+  },
+  {
+    name: "Salah Hajouji",
+    role: "Filmmaker - Video editor & Photographer",
+    image: user,
+  },
   // {
   //   name: "Youssef Oujakar",
   //   role: "Filmmaker - Video editor & Photographer",
@@ -46,7 +46,7 @@ const teamMembers = [
 const TeamSection = () => {
   return (
     <div className="bg-gray-50 py-16 px-4 min-h-screen">
-      <style jsx>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         @import url('https://fonts.googleapis.com/css2?family=Lemon:wght@400&family=Poppins:wght@300;400;500;600;700&display=swap');
 
         .stroked-text {
@@ -70,7 +70,7 @@ const TeamSection = () => {
         .font-poppins {
           font-family: 'Poppins', sans-serif;
         }
-      `}</style>
+      `}} />
 
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -107,7 +107,7 @@ const TeamSection = () => {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                      className="w-full h-full object-cover transition-all duration-300"
                     />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-3 text-xl leading-tight">{member.name}</h3>
@@ -126,7 +126,7 @@ const TeamSection = () => {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                      className="w-full h-full object-cover transition-all duration-300"
                     />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-3 text-xl leading-tight">{member.name}</h3>
@@ -162,7 +162,7 @@ const TeamSection = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className="w-full h-full object-cover transition-all duration-300"
                   />
                   {member.smalllogo && (
                     <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2">

@@ -3,7 +3,7 @@ import { Card, CardContent, CardFooter } from "../ui/card";
 import { Button } from "../../components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Badge } from "../ui/badge";
-import Aymane from "../../assets/team/Aymane.svg";
+// import Nour from "../../assets/team/Zeus.svg";
 import Ayoub from "../../assets/team/Ayoub.svg";
 import polygone from '../../assets/services/Polygon.svg';
 import NoirBlanc from "../../assets/services/NoirBlanc.svg";
@@ -146,7 +146,7 @@ const Service = () => {
             </div>
             <div className="absolute w-[89px] h-[42px] top-[238px] left-[31px] flex gap-1">
               <Avatar className="w-[42px] h-[42px]">
-                <AvatarImage src={Aymane} alt="User avatar" />
+                <AvatarImage src={Ayoub} alt="User avatar" />
                 <AvatarFallback>U1</AvatarFallback>
               </Avatar>
               <Avatar className="z-40 w-[42px] h-[42px] -ml-5">
