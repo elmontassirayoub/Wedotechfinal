@@ -88,7 +88,7 @@ export default function ServicesSwiper() {
                   <p className="text-sm mb-4 drop-shadow-sm">
                     {service.description}
                   </p>
-                  <a href="https://www.wedotechagency.com/projects" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wedotechagency.com/projects" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-white text-black rounded-full px-6 py-6">
                     View more
                   </Button>
